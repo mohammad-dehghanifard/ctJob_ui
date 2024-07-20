@@ -29,9 +29,68 @@ class LoginPage extends StatelessWidget {
               CustomButtonWidget(
                 onTap: () {},
                 text: "Log in",
+              ),
+              const SizedBox(height: 32),
+
+              Center(
+                child: TextButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      overlayColor: WidgetStatePropertyAll(const Color(0xFF356899).withOpacity(0.15))
+                    ),
+                    child: Text(
+                      "Forget Password",
+                      style: GoogleFonts.poppins(
+                          color: const Color(0xFF356899),
+                          fontWeight: FontWeight.w500,
+                        fontSize: 15
+                      ),)),
+              ),
+              const SizedBox(height: 24),
+               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(child: Container(height: 1,width: double.infinity,color: const Color(0xFFAFB0B6),)),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child:  Text("Or continue with",style: GoogleFonts.poppins(fontSize: 13,color: const Color(0xFFAFB0B6)),),
+                  ),
+                  Expanded(child: Container(height: 1,width:double.infinity,color: const Color(0xFFAFB0B6),)),
+                ],
+              ),
+              const SizedBox(height: 24),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white
+                    ),
+                    child: Image.asset("assets/png/google.png"),
+                  ),
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white
+                    ),
+                    child: Image.asset("assets/png/apple.png"),
+                  ),
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white
+                    ),
+                    child: Image.asset("assets/png/facebook.png"),
+                  ),
+                ],
               )
-
-
             ],
           ),
         ),
