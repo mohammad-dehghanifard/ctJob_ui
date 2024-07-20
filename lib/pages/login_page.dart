@@ -1,5 +1,5 @@
+import 'package:ctjob_ui/widgets/custom_button_widget.dart';
 import 'package:ctjob_ui/widgets/custom_text_field_widget.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -24,6 +24,14 @@ class LoginPage extends StatelessWidget {
              const CustomTextFieldWidget(hint: "E-Mail",prefixIcon: Icons.email_outlined),
               const SizedBox(height: 24),
              const CustomTextFieldWidget(hint: "Password",prefixIcon: Icons.password,suffixIcon: Icons.remove_red_eye_rounded,),
+              const SizedBox(height: 24),
+
+              CustomButtonWidget(
+                onTap: () {},
+                text: "Log in",
+              )
+
+
             ],
           ),
         ),
@@ -31,3 +39,5 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
+
